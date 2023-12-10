@@ -160,7 +160,7 @@
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm sản phẩm">
                             <!-- search history -->
-                            <div class="header__search-history">
+                            <!-- <div class="header__search-history">
                                 <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
                                 <ul class="header__search-history-list">
                                     <li class="header__search-history-item">
@@ -170,7 +170,7 @@
                                         <a href="">Kem dưỡng da</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
 
                         </div>
                         <!-- <div class="header__search-select">
@@ -193,6 +193,12 @@
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+
+                    <!-- search advanced -->
+                    <div class="search-avanced">
+                        <a href="./page/search.html" class="search-avanced-link">Tìm Kiếm Nâng Cao</a>
+                    </div>
+                    
                     <!-- CART LAYOUT -->
                     <div class="header__cart">
                         <div class="header__cart-wrap">
@@ -405,662 +411,305 @@
                                     <div class="grid__row">
                                         <!-- product item -->
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="./page/detaillaptop1.html">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(./assets/img/laptop1.webp);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Laptop ASUS TUF </h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">26.990.000đ</span>
-                                                    <span class="home-product-item-price-current">24.490.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">1 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Asus</span>
-                                                    <span class="home-product-item__origin-name">VietNam</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
                                         
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="./page/detaillaptop1.html">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(./assets/img/laptop1.webp);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Laptop ASUS TUF </h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">26.990.000đ</span>
-                                                    <span class="home-product-item-price-current">24.490.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">1 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Asus</span>
-                                                    <span class="home-product-item__origin-name">VietNam</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
 
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="./page/detaillaptop1.html">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(./assets/img/laptop1.webp);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Laptop ASUS TUF </h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">26.990.000đ</span>
-                                                    <span class="home-product-item-price-current">24.490.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">1 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Asus</span>
-                                                    <span class="home-product-item__origin-name">VietNam</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
 
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="./page/detaillaptop1.html">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(./assets/img/laptop1.webp);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Laptop ASUS TUF </h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">26.990.000đ</span>
-                                                    <span class="home-product-item-price-current">24.490.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">1 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Asus</span>
-                                                    <span class="home-product-item__origin-name">VietNam</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
 
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="./page/detaillaptop1.html">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(./assets/img/laptop1.webp);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Laptop ASUS TUF </h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">26.990.000đ</span>
-                                                    <span class="home-product-item-price-current">24.490.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">1 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Asus</span>
-                                                    <span class="home-product-item__origin-name">VietNam</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="pills-illustration" role="tabpanel"
-                                aria-labelledby="pills-illustration-tab" tabindex="0">
+                            
+                            <div class="tab-pane fade show active" id="pills-project" role="tabpanel"
+                                aria-labelledby="pills-project-tab" tabindex="0">
                                 <div class="home-product">
                                     <div class="grid__row">
                                         <!-- product item -->
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
+                                        
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
+
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
+
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
+
                                         <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
+                                            <div class="home-product-item">
+                                                <div  class="home-product-item__img"
+                                                    >
+                                                    <a style="text-decoration: none;" href="./page/detaillaptop1.html">
+                                                    <img  src="./assets/img/laptop1.webp" alt="">
+                                                    <h4 class="home-product-item-name">Laptop ASUS TUF</h4>
+                                                    <div class="home-product-item-price">
+                                                        <span class="home-product-item-price-current">24.490.000đ</span>
                                                     </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
+                                                </a>
                                                 </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
+                                                <button onclick="addToCart()" class="btn btn-danger px-5">Add to cart</button>
+                                                
+
+                                              
+                                               
                                                 <div class="home-product-item__favourite">
                                                     <i class="fa-solid fa-check"></i>
                                                     <span>Yêu thích</span>
                                                 </div>
-                                                <div class="home-product-item__sale-off">
+                                                <!-- <div class="home-product-item__sale-off">
                                                     <span class="home-product-item__sale-off-percent">10%</span>
                                                     <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
+                                                </div> -->
 
-                                            </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-photography" role="tabpanel"
-                                aria-labelledby="pills-photography-tab" tabindex="0">
-                                <div class="home-product">
-                                    <div class="grid__row">
-                                        <!-- product item -->
-                                        <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
-                                                </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
-                                                <div class="home-product-item__favourite">
-                                                    <i class="fa-solid fa-check"></i>
-                                                    <span>Yêu thích</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-percent">10%</span>
-                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
 
-                                            </a>
-                                        </div>
-                                        <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
-                                                </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
-                                                <div class="home-product-item__favourite">
-                                                    <i class="fa-solid fa-check"></i>
-                                                    <span>Yêu thích</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-percent">10%</span>
-                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                        <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
-                                                </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
-                                                <div class="home-product-item__favourite">
-                                                    <i class="fa-solid fa-check"></i>
-                                                    <span>Yêu thích</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-percent">10%</span>
-                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                        <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
-                                                </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
-                                                <div class="home-product-item__favourite">
-                                                    <i class="fa-solid fa-check"></i>
-                                                    <span>Yêu thích</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-percent">10%</span>
-                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                        <div class="grid__colum-2-4">
-                                            <a class="home-product-item" href="">
-                                                <div class="home-product-item__img"
-                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhx4j4tudfgl9e);">
-                                                </div>
-                                                <h4 class="home-product-item-name">Giày nb, thể thao nam nữ ,Giày nb New
-                                                    Balance
-                                                    574, thể thao Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</h4>
-                                                <div class="home-product-item-price">
-                                                    <span class="home-product-item-price-old">626.000đ</span>
-                                                    <span class="home-product-item-price-current">600.000đ</span>
-                                                </div>
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item-like home-product-item-like-liked">
-                                                        <i
-                                                            class="home-product-item-like-icon-empty fa-regular fa-heart"></i>
-                                                        <i
-                                                            class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item-rating">
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class="home-product-item__star-gold fa-solid fa-star"></i>
-                                                        <i class=" fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
-                                                </div>
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__branch">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Nhật bản</span>
-                                                </div>
-                                                <div class="home-product-item__favourite">
-                                                    <i class="fa-solid fa-check"></i>
-                                                    <span>Yêu thích</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-percent">10%</span>
-                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1101,26 +750,26 @@
                         </div>
                         <div class="auth-form__form">
                             <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email">
+                                <input id="emailUser" type="text" class="auth-form__input" placeholder="Email">
                             </div>
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                                <input id="mkUser" type="password" class="auth-form__input" placeholder="Mật khẩu">
                             </div>
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                                <input id="vrfPass" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
                             </div>
                         </div>
                         <div class="auth-form__aside">
                             <p class="auth-form__policy-text">
                                 Bằng việc đăng kí, bạn đã đồng ý với shoppe về
-                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                <a  class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a  class="auth-form__text-link">Chính sách bảo mật</a>
                             </p>
                         </div>
                         <div class="auth-form__controls">
-                            <button data-dismiss="modal" onclick="troLai()"
-                                class="btn hover1 auth-form__controls-back">TRỞ LẠI</button>
-                            <button onclick="dangKi()" class="btn btn--primary">ĐĂNG KÍ</button>
+                            <button data-dismiss="modal" 
+                                class="btn btn-danger px-5hover1 auth-form__controls-back">TRỞ LẠI</button>
+                            <button onclick="dangKi()" class="btn btn-danger px-5btn--primary">ĐĂNG KÍ</button>
                         </div>
                     </div>
                     <!-- <div class="auth-form__socials">
@@ -1168,8 +817,8 @@
                             </div>
                         </div> -->
                         <div class="auth-form__controls">
-                            <button data-dismiss="modal" class="btn hover1 auth-form__controls-back">TRỞ LẠI</button>
-                        <button onclick="login()" class="btn btn--primary">ĐĂNG NHẬP</button>
+                            <button data-dismiss="modal" class="btn btn-danger px-5hover1 auth-form__controls-back">TRỞ LẠI</button>
+                          <a >   <button onclick="login()"  class="btn btn-danger px-5btn--primary">ĐĂNG NHẬP</button></a>
                         </div>
                     </div>
                     <!-- <div class="auth-form__socials">
@@ -1226,11 +875,11 @@
     referrerpolicy="no-referrer"
   ></script>
     <!-- my js -->
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./index.js"></script>
     <script src="./controller.js"></script>
     <script src="./model.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/5.12.1/antd.min.js" integrity="sha512-xrQg0/hiVJx4cmh2G4Oy7VAjJ8wX5+Htii2owXKWhPr3ZtCAaY38UYQ+5BUziCUs4SgLjP5Tfk82zROWOCj7HQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
     </script>
 </body>
 

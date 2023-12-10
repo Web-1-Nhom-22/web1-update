@@ -123,7 +123,7 @@
                         <li data-toggle="modal" data-target="#myModal1"
                             class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
                         <li class="header__navbar-item header__navbar-user">
-                            <img src="../assets/img/369170681_3447821338867550_1514291510323317149_n.jpg"
+                            <img src="../assets/img/avatar.png"
                                 alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">User</span>
                             <ul class="header__navbar-user-menu">
@@ -157,7 +157,7 @@
                         </a>
                     </div>
                     <div class="header__search">
-                        <div class="header__search-input-wrap">
+                        <!-- <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm sản phẩm">
                             <!-- search history -->
                             <div class="header__search-history">
@@ -172,8 +172,8 @@
                                 </ul>
                             </div>
 
-                        </div>
-                        <div class="header__search-select">
+                        </div> -->
+                        <!-- <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
 
@@ -188,7 +188,7 @@
                                 </li>
                             </ul>
 
-                        </div>
+                        </div> -->
                         <button class="header__search-btn">
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -196,82 +196,39 @@
                     <!-- CART LAYOUT -->
                     <div class="header__cart">
                         <div class="header__cart-wrap">
-                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                            <!-- <span class="header__cart-notice">3</span>
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i> 
+                            <div class="icon">                        
+                            <span id="cartCount" class="header__cart-notice">0</span>
+                        </div>
+                            <!-- No cart:header__cart-list--no-cart -->
                             <div class="header__cart-list  ">
                                 <img src="https://ohuivina.com/assets/images/no-cart.png" alt=""
                                     class="header__cart-list--no-cart-img">
-                                <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
-                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
-                                <ul class="header__cart-list-item">
-                                    
-                                    <li class="header__cart-item">
-                                        <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/369170681_3447821338867550_1514291510323317149_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=s_K_R8j-37IAX_QoqMj&_nc_ht=scontent.fsgn5-15.fna&oh=00_AfB-HdPMFQb2jFdXRQF4nE5ZR2frlkqDCjSrKlucLbOS6w&oe=64FA08A1"
-                                            alt="" class="header__cart-img">
-                                        <div class="header__card-item-info">
-                                            <div class="header__card-item-head">
-                                                <h5 class="header__card-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__card-item-price">2.000.000đ</span>
-                                                    <span class="header__card-item-multiply">x</span>
-                                                    <span class="header__card-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__card-item-body">
-                                                <span class="header__card-item-description">
-                                                    Phân loại:Bạc
-                                                </span>
-                                                <span class="header__card-item-remove">Xoá</span>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/369170681_3447821338867550_1514291510323317149_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=s_K_R8j-37IAX_QoqMj&_nc_ht=scontent.fsgn5-15.fna&oh=00_AfB-HdPMFQb2jFdXRQF4nE5ZR2frlkqDCjSrKlucLbOS6w&oe=64FA08A1"
-                                            alt="" class="header__cart-img">
-                                        <div class="header__card-item-info">
-                                            <div class="header__card-item-head">
-                                                <h5 class="header__card-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__card-item-price">2.000.000đ</span>
-                                                    <span class="header__card-item-multiply">x</span>
-                                                    <span class="header__card-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__card-item-body">
-                                                <span class="header__card-item-description">
-                                                    Phân loại:Bạc
-                                                </span>
-                                                <span class="header__card-item-remove">Xoá</span>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/369170681_3447821338867550_1514291510323317149_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=s_K_R8j-37IAX_QoqMj&_nc_ht=scontent.fsgn5-15.fna&oh=00_AfB-HdPMFQb2jFdXRQF4nE5ZR2frlkqDCjSrKlucLbOS6w&oe=64FA08A1"
-                                            alt="" class="header__cart-img">
-                                        <div class="header__card-item-info">
-                                            <div class="header__card-item-head">
-                                                <h5 class="header__card-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__card-item-price">2.000.000đ</span>
-                                                    <span class="header__card-item-multiply">x</span>
-                                                    <span class="header__card-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__card-item-body">
-                                                <span class="header__card-item-description">
-                                                    Phân loại:Bạc
-                                                </span>
-                                                <span class="header__card-item-remove">Xoá</span>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
-                            </div> -->
+                              
+                                <section class="cart">
+                                    <h2>Cart</h2>
+                                    <form action="">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Sản phẩm</th>
+                                                    <th>Giá</th>
+                                                    <th>Số lượng</th>
+                                                    <th>Chọn</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+                                    <div style="text-align: right;" class="priceTotal">
+                                        <p style="font-weight: bold; margin-right: 15px;">Tổng tiền: <span></span></p>
+                                    </div>
+                                    </form>
+                                </section>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Thanh Toán</a>
+                            </div>
                         </div>
 
 
@@ -303,137 +260,78 @@
                         </nav>
                         
                     </div>
-                    <div class="grid__colum-10">
-                        <!-- <div class="home-filter"> -->
-                            <!-- <ul style="display: flex; align-items: center;" class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
-                                <span class="home-filter__label">Sắp xếp theo</span>
-                            <li class="nav-item " role="presentation">
-                                <button class="home-filter__btn btn nav-link active" id="pills-project-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-project" type="button" role="tab"
-                                    aria-controls="pills-project" aria-selected="true">Phổ biến</button>
-                            </li>
+                    <div class="grid__colum-4">
+                        <img src="../assets/img/laptophp.webp" alt="" class="product-picture" >
+                    </div>
 
-                            <li class="nav-item " role="presentation">
-                                <button class="nav-link home-filter__btn btn " id="pills-illustration-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-illustration" type="button" role="tab"
-                                    aria-controls="pills-illustration" aria-selected="false">Mới nhất</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link home-filter__btn btn" id="pills-photography-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-photography" type="button" role="tab"
-                                    aria-controls="pills-photography" aria-selected="false">Bán chạy</button>
-                            </li> -->
-                            <!-- <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-Website-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-Website" type="button" role="tab"
-                                    aria-controls="pills-Website" aria-selected="false">Trang 4</button>
-                            </li> -->
-
-
-                            <!-- <div class="select-input">
-                                <span class="select-input__label">Giá</span>
-                                <i class="select-input__icon fa-solid fa-chevron-down"></i>
-                                <ul class="select-input__list">
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__link">Giá: Thấp đến Cao</a>
-                                    </li>
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
-                                    </li>
-    
-                                </ul>
-                            </div>
-                        </ul> -->
-                            
-                            
-                            
-
-                            <!-- <div class="home-filter__page">
-                                <span class="home-filter__page-num">
-                                    <span class="home-filter__page-current">1</span>/2
-
-                                </span>
-                                <div class="home-filter__page-control">
-                                    <a href="" class="home-filter__page-btn home-filter__page-control--disable">
-                                        <i class="home-filter__page-icon fa-solid fa-chevron-left"></i>
-                                    </a>
-                                    <a href="./loginPage2-laptop.html" class="home-filter__page-btn">
-                                        <i class="home-filter__page-icon fa-solid fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div> -->
-                        <!-- TAB -->
-                        
-                        <!-- TAB CONTENT -->
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-project" role="tabpanel"
-                                aria-labelledby="pills-project-tab" tabindex="0">
-                                <div class="home-product">
-                                    <div class="grid__row">
-                                        <!-- product detail -->
-                                        
-                                        <div class="product__detail">
-                                            <div class="product__detail-img">
-                                                <img src="../assets/img/laptophp.webp" alt="" class="product__detail-img-item">
-                                            </div>
-                                            <div class="product__detail-info">
-                                                <div class="product__detail-title--heading">
-                                                    <h3 class="product__detail-title">
-                                                        Laptop HP Spectre x360 14-ef0030TU (6K773PA) (i7-1255U/RAM 16GB/1TB SSD/ Window 11)
-                                                    </h3>
-                                                    <!-- <h5 class="product__detail-title--h5">Thương hiệu 
-                                                        <span>ASUS</span>
-                                                        <span>SKU: 230904118</span>
-                                                        <span>Mã Vạch: 324530</span>
-                                                    </h5> -->
-                                                    <ul class="product__detail-list">
-                                                        <li class="product__detail-list-item">- CPU: Intel Core i7-1255U</li>
-                                                        <li class="product__detail-list-item">- Màn hình: 13.5" OLED (3000 x 2000)</li>
-                                                        <li class="product__detail-list-item">- RAM: 16GB Onboard LPDDR4X 4266MHz</li>
-                                                        <li class="product__detail-list-item">- Đồ họa: Onboard Intel Iris Xe Graphics</li>
-                                                        <li class="product__detail-list-item">- Lưu trữ: 1TB SSD M.2 NVMe/</li>
-                                                        <li class="product__detail-list-item">- Hệ điều hành: Window 11 Home</li>
-                                                        <!-- <li class="product__detail-list-item">- Pin: 4 cell 66 Wh Pin liền</li>
-                                                        <li class="product__detail-list-item">- Khối lượng: 1.4kg</li>
-                                                        <li class="product__detail-list-item">- Chuẩn Intel EVO</li> -->
-                                                    </ul>
-
-                                                    <div class="product__detail-sprice">
-                                                        <span class="product__detail-sprice-cur">51.990.000đ</span>
-                                                    </div>
-
-                                                    <!-- <div class="product__detail-sprice">
-                                                        <span class="product__detail-sprice-old">26.900.000đ</span>
-                                                        <span class="product__detail-sprice-sale">-15.497%</span>
-                                                    </div> -->
-                                                    <!-- <div class="product__detail-promotion">
-                                                        <span>Khuyến mãi liên quan</span>
-                                                        <ul class="product__detail-promotion-list">
-                                                            <li>Giảm thêm đến 200.000đ dành cho Học sinh - sinh viên (không áp dụng với CPU, Apple và thẻ cào).</li>
-                                                            <li>Ưu đãi trả góp: Lãi xuất chỉ 0.99%, trả trước từ 0% giá trị sản phẩn</li>
-                                                            <li>Nhập mã <span>QRPV9</span></li>
-                                                            <li>Nhập mã <span>PVZLP200 </span>giảm thêm đến 200.000đ khi thanh toán qua ZaloPay</li>
-                                                        </ul>
-                                                    </div> -->
-                                                    <a href="x">
-                                                        <div class="product__detail-buy">
-                                                            <span class="product__detail-buy-item btn btn--primary">Mua Ngay</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tab-pane fade" id="pills-Website" role="tabpanel"
-                                aria-labelledby="pills-Website-tab" tabindex="0">4</div>
-
+                    <div class="grid__colum-6">
+                        <h1 class="product-title">Laptop HP Spectre</h1>
+                        <div class="price">
+                            <span class="home-product-item-price-current size-price-saleoff">51.990.000đ</span>
                         </div>
 
+                        <div class="product__info">
+                            <h2 class="title-info">Thông tin chi tiết sản phẩm</h2>
+                            <ul class="product__info-list">
+                                <span class="title-element">
+                                    <span>Màn hình</span>
+                                </span>
+                                <!-- <li class="product__info-element">
+                                    <span class="element">Công nghệ màn hình:</span>
+                                    <span class="element">
+                                        <a href="" class="element-click">Tấm nền OLED</a>
+                                    </span>
+                                </li> -->
+
+                                <li class="product__info-element">
+                                    <span class="element">Độ phân giải:</span>
+                                    <span class="element">13.5" OLED (3000 x 2000)</span>
+                                </li>
+
+                                <!-- <li class="product__info-element">
+                                    <span class="element">Màn hình rộng:</span>
+                                    <span class="element">6.1 inch - Tần số quét
+                                        <a href="" class="element-click">60 Hz</a>
+                                    </span>
+                                </li> -->
+                            </ul>
+
+                            <ul class="product__info-list">
+                                <span class="title-element">
+                                    <span>Camera</span>
+                                </span>
+
+                                <li class="product__info-element">
+                                    <span class="element">
+                                        <a href="" class="element-click">720p HD camera With privacy shutter</a>
+                                    </span>
+                                </li>
+
+                                
+                            </ul>
+
+                            <ul class="product__info-list">
+                                <span class="title-element">
+                                    <span>Mô tả</span>
+                                </span>
+                               
+                                <li class="product__info-element">
+                                    <span class="element">Thiết kế sang trọng, gọn nhẹ và mạnh mẽ</span>
+                                </li>
+                            </ul>
+
+                            <ul class="product__info-list">
+                                <span class="title-element">
+                                    <span>Loại</span>
+                                </span>
+
+                                <li class="product__info-element">
+                                    <span class="element">Laptop</span>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        
                     </div>
                 </div>
             </div>
